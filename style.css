@@ -2,9 +2,13 @@ html {
     height: 100%;
 }
 body {
+	font-family: "Comfortaa", sans-serif;
     min-height: 100%;
 	background-size: cover;
 	margin:0;
+}
+#main{
+	padding-bottom: 30px;
 }
 div {
 	display: flex;
@@ -16,19 +20,33 @@ div {
 	margin: auto;
 }
 button {
+	font-family: "Comfortaa", sans-serif;
 	color: white;
-    display: block;
-    margin: 0 auto;
-	width: 20vw;
-	max-width: 500px;
-	height: 10vw;
+	display: block;
+	margin: 0 auto;
+	width: 40vw;
+	height: 80px;
 	font-size: 3vw;
 	border-radius: 20px;
-	border: 0px solid transparent;
+	border: none;
 	background-color: red;
-	box-shadow: 0 0 45px 30px rgb(51, 51, 51);
-	z-index: 0;
+	z-index: 999;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
 }
+
+button:hover {
+	background-color: #8f0101;
+	transform: scale(1.05);
+	box-shadow: 0 0 30px rgba(255, 0, 0, 0.6);
+}
+
+button:active {
+	transform: scale(0.97);
+	background-color: #5c0000;
+}
+
 p {	
 	text-align:center;
 	font-size:3.3vw;
@@ -41,23 +59,36 @@ form{
 	margin: 30px auto;
 }
 .contain{
+	z-index: 999;
+	border-radius: 25px;
 	justify-content: center;
 	margin:0;
 	background:none;
 	background-color: transparent;
+    flex-direction:column;
+	width: 70%;
+	border: 4px solid white;
+}
+.contain2{
+    justify-content: center;
+    align-items: center;
+	background:none;
+	background-color: transparent;
     flex-direction:row;
+	float:right;
+	margin-bottom: 20px;
 }
 .userComputer{
-	font-size: 4vw;
+	font-size: 3vw;
 	color: white;
 	text-align: center;
 	background:none;
-	background-size: 70% 70%;
+	background-size:  14.2vw 20vw;
 	background-repeat: no-repeat;
 	background-position: center bottom;
-	width: 30%;
-	box-shadow: 0 0 45px 30px rgb(63, 62, 62);
-	height: 600px;
+	width: 21vw;
+	box-shadow: 0 0 45px 30px rgb(7, 7, 7);
+	height: 27vw;
 	border-radius: 25px;
 	overflow: hidden;
 	background-blend-mode:normal;
