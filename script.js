@@ -16,7 +16,7 @@
   let playerCard;
   let compCard;
   const score = document.getElementById("score");
-  score.innerHTML = "Спроба: 0 з 3";
+  score.innerHTML = "Спроба: 0 з 3<br>Рахунок: 0 – 0<br>ㅤ";
 
   const div = document.createElement("container");
 
@@ -82,8 +82,8 @@ case 9: comp.style.cssText = `background-image: url("img/A${Math.floor((Math.ran
       comp.style.backgroundColor = "rgb(255, 213, 128)";
     }
     count++;
-    score.innerHTML = "Спроба "+ count + " з 3<br>Рахунок: "+player+" – "+computer;
-    if(count == 3 && computer> player) score.innerHTML += "<br>На жаль, Ви програли(";
-    else if(count == 3 && player> computer) score.innerHTML += "<br>Вітаю, Ви перемогли!";
-    else if(count ==3 && player == computer) score.innerHTML += "<br>Нічия!";
+    score.innerHTML = "Спроба "+ count + " з 3<br>Рахунок: "+player+" – "+computer+"<br>ㅤ";
+    if(count == 3 && computer> player) score.innerHTML += "На жаль, Ви програли(";
+    else if(count == 3 && player> computer) score.innerHTML += "Вітаю, Ви перемогли!";
+    else if(count ==3 && player == computer) score.innerHTML += "Нічия!";
   }
